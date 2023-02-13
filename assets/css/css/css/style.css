@@ -1639,6 +1639,6 @@ section .container {
   margin: 0 16px;
 }
 
-. {
+.loaddiv{
+  display: none;
 }
-
