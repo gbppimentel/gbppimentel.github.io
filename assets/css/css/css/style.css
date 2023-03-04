@@ -58,6 +58,101 @@ body::before {
   z-index: -1;
 }
 
+.preloader{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: #111;
+	z-index: 9999;
+	text-align: center;
+}
+
+.loader{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 30px;
+	height: 120px;
+	display: flex;
+	flex-flow: column nowrap;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+.info
+{
+	text-align: justify;
+}
+
+
+.h44{
+	color: #b494b8;
+}
+
+.logox
+{
+	max-width: 150px;
+}
+.preloader .diamond{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto;
+    width: 30px;
+    height: 30px;
+    border-radius: 2px;
+    background: #b494b8;
+    -webkit-transform: translateY(0) rotate(45deg) scale(0);
+    transform: translateY(0) rotate(45deg) scale(0);
+    -webkit-animation: diamonds 1500ms linear infinite;
+    animation: diamonds 1500ms linear infinite;
+}
+
+.preloader .diamond:nth-child(1) {
+    -webkit-animation-delay: -1000ms;
+    animation-delay: -1000ms;
+}
+
+.preloader .diamond:nth-child(2) {
+    -webkit-animation-delay: -2000ms;
+    animation-delay: -2000ms;
+}
+
+.preloader .diamond:nth-child(3) {
+    -webkit-animation-delay: -3000ms;
+    animation-delay: -3000ms;
+}
+
+.preloader .diamond:nth-child(4) {
+    -webkit-animation-delay: -4000ms;
+    animation-delay: -4000ms;
+}
+
+@-webkit-keyframes diamonds {
+    50% {
+        -webkit-transform: translateY(-50px) rotate(45deg) scale(1);
+        transform: translateY(-50px) rotate(45deg) scale(1);
+    }
+    100% {
+        -webkit-transform: translateY(-100px) rotate(45deg) scale(0);
+        transform: translateY(-100px) rotate(45deg) scale(0);
+    }
+}
+
+@keyframes diamonds {
+    50% {
+        -webkit-transform: translateY(-50px) rotate(45deg) scale(1);
+        transform: translateY(-50px) rotate(45deg) scale(1);
+    }
+    100% {
+        -webkit-transform: translateY(-100px) rotate(45deg) scale(0);
+        transform: translateY(-100px) rotate(45deg) scale(0);
+    }
+}
+
+
 @media (min-width: 1024px) {
   body::before {
     background-attachment: fixed;
