@@ -1,0 +1,30 @@
+.fab.fa-instagram.twitter.soc-med:hover {
+  color: #00ded1;
+}
+
+.fab.fa-linkedin.linkedin.soc-med:hover {
+  color: #00ded1;
+}
+
+svg:hover {
+  color: #00ded1;
+}
+
+.icon.ion-social-instagram.instagram.soc-med:hover {
+  color: #00ded1;
+}
+
+.soc-med {
+  font-size: 22px;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+.fab.fa-instagram.instagram:hover {
+  color: #00ded1;
+}
+
+.fab.fa-facebook-square.facebook:hover {
+  color: #00ded1;
+}
+

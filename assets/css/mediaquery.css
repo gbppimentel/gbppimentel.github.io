@@ -1,0 +1,422 @@
+@media (max-width: 576px) {
+  .industry-partners {
+    font-size: 40px !important;
+  }
+}
+
+@media (max-width: 360px) {
+  .industry-partners {
+    font-size: 34px !important;
+  }
+}
+
+@media (max-width: 360px) {
+  .image-container2 {
+    width: 959% !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .image-container2 {
+    width: 963% !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .industry-paragraph {
+    display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .image-container2 {
+    width: 600% !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .image-container2 {
+    width: 569% !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .image-container2 {
+    width: 569% !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .image-container2 {
+    width: 569% !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .image-container2 {
+    width: 569% !important;
+  }
+}
+
+@media (max-width: 992px) {
+  .university-roll.industry-roll {
+    min-height: 20em !important;
+  }
+}
+
+@media (max-width: 360px) {
+  .image-container {
+    width: 688%;
+  }
+}
+
+@media (max-width: 576px) {
+  .univ-paragraph {
+    display: none;
+  }
+}
+
+@media (max-width: 360px) {
+  .com-p {
+    max-width: 260px;
+  }
+}
+
+@media (max-width: 360px) {
+  #section2sponsor {
+    height: 70px;
+  }
+}
+
+@media (max-width: 576px) {
+  #section2sponsor {
+    height: 95px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  #section2sponsor {
+    height: 104px !important;
+  }
+}
+
+@media (max-width: 992px) {
+  #section2sponsor {
+    height: 110px !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .comb {
+    display: none !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .ikaw100 {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .help-me {
+    display: block;
+  }
+}
+
+@media (max-width: 1200px) {
+  #section2sponsor {
+    height: 120px !important;
+  }
+}
+
+@media (max-width: 360px) {
+  .date-venue {
+    font-size: 13px !important;
+    max-width: 243px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .date-venue {
+    max-width: 384px !important;
+    font-size: 20px !important;
+  }
+}
+
+@media (max-width: 360px) {
+  #section9sponsor {
+    height: 706px !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .send-button {
+    top: 87%;
+  }
+}
+
+@media (max-width: 576px) {
+  #section9sponsor {
+    height: 517px !important;
+  }
+}
+
+@media (max-width: 1200px) {
+  #section9sponsor {
+    min-height: 477px !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .credits {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 360px) {
+  .credits {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 360px) {
+  .the-community {
+    font-size: 28px !important;
+  }
+}
+
+@media (max-width: 360px) {
+  .comm-text {
+    font-size: 14px !important;
+  }
+}
+
+@media (max-width: 992px) {
+  .com-row {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 992px) {
+  .community-div {
+    height: 1200px;
+  }
+}
+
+@media (max-width: 992px) {
+  .last-col {
+    padding-top: 40px;
+  }
+}
+
+@media (max-width: 576px) {
+  .second-col {
+    padding-top: 40px;
+  }
+}
+
+@media (max-width: 576px) {
+  .community-div {
+    height: 1600px;
+  }
+}
+
+@media (max-width: 360px) {
+  .community-head {
+    font-size: 47px !important;
+  }
+}
+
+@media (max-width: 1200px) {
+  .hackathon-text {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .hackathon-text2 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .esports-text3 {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .hackathon-text3 {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 992px) {
+  .hackathon-text3 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 992px) {
+  .event {
+    height: 255px;
+    transition: 3ms linear;
+  }
+}
+
+@media (max-width: 768px) {
+  .hackathon-num {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hackathon-text {
+    font-size: 7px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hackathon-text2 {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hackathon-text3 {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .event {
+    height: 212px;
+  }
+}
+
+@media (max-width: 576px) {
+  .event {
+    height: 375px;
+  }
+}
+
+@media (max-width: 576px) {
+  .hackathon-text {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 576px) {
+  .space {
+    padding-bottom: 20px;
+  }
+}
+
+@media (max-width: 360px) {
+  .event {
+    height: 419px;
+  }
+}
+
+.esports-text {
+  color: #ffffff;
+  font-family: 'Poppins';
+  font-size: 23px;
+}
+
+@media (max-width: 1200px) {
+  .event1 {
+    height: 240px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .esports-text {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 360px) {
+  .sliding-gallery {
+    /*padding-top: 176px !important;*/
+    /*display: none;*/
+  }
+}
+
+@media (max-width: 360px) {
+  #section4university {
+    min-height: 1em;
+  }
+}
+
+@media (max-width: 992px) {
+  .indicators {
+    display: none !important;
+  }
+}
+
+@media (max-width: 992px) {
+  .vertical-line {
+    display: none;
+  }
+}
+
+@media (max-width: 992px) {
+  #scroll-text {
+    display: none;
+  }
+}
+
+@media (max-width: 992px) {
+  .mouse {
+    display: none;
+  }
+}
+
+@media (max-width: 992px) {
+  .helper {
+    display: block !important;
+  }
+}
+
+.helper {
+  display: none;
+}
+
+@media (max-width: 992px) {
+  .hackathon-row {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 992px) {
+  .event-heading {
+    text-align: center !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .event-num {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  .image-container1 {
+    width: 634% !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .image-container1 {
+    width: 840% !important;
+  }
+}
+
+@media (max-width: 360px) {
+  .image-container1 {
+    width: 1371% !important;
+  }
+}
+

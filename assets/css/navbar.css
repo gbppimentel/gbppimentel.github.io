@@ -1,0 +1,209 @@
+.bs-icon {
+  --bs-icon-size: .75rem;
+  display: flex;
+  flex-shrink: 0;
+  justify-content: center;
+  align-items: center;
+  font-size: var(--bs-icon-size);
+  width: calc(var(--bs-icon-size) * 2);
+  height: calc(var(--bs-icon-size) * 2);
+  color: var(--bs-primary);
+}
+
+.bs-icon-xs {
+  --bs-icon-size: 1rem;
+  width: calc(var(--bs-icon-size) * 1.5);
+  height: calc(var(--bs-icon-size) * 1.5);
+}
+
+.bs-icon-sm {
+  --bs-icon-size: 1rem;
+}
+
+.bs-icon-md {
+  --bs-icon-size: 1.5rem;
+}
+
+.bs-icon-lg {
+  --bs-icon-size: 2rem;
+}
+
+.bs-icon-xl {
+  --bs-icon-size: 2.5rem;
+}
+
+.bs-icon.bs-icon-primary {
+  color: var(--bs-white);
+  background: var(--bs-primary);
+}
+
+.bs-icon.bs-icon-primary-light {
+  color: var(--bs-primary);
+  background: rgba(var(--bs-primary-rgb), .2);
+}
+
+.bs-icon.bs-icon-semi-white {
+  color: var(--bs-primary);
+  background: rgba(255, 255, 255, .5);
+}
+
+.bs-icon.bs-icon-rounded {
+  border-radius: .5rem;
+}
+
+.bs-icon.bs-icon-circle {
+  border-radius: 50%;
+}
+
+body {
+  /*background-image: url(../../assets/img/bg-galaxy.jpg);*/
+  /*background-size: cover;*/
+}
+
+.nav-link {
+  color: var(--bs-white);
+}
+
+.line-horizontal {
+  width: 124px;
+  margin: auto;
+  text-align: center;
+  border-top: 2px solid #6CEDD6;
+}
+
+.date-venue {
+  margin: auto;
+  justify-content: center;
+}
+
+.buy-tickets {
+  font-size: 13px !important;
+  border-radius: 30px;
+  background: #FDE047;
+  border-style: none;
+  color: #064D47;
+  font-family: Poppins, sans-serif;
+}
+
+.navbar {
+  position: fixed;
+  /*background-image: url("../../assets/img/bg-galaxy.jpg");*/
+  /*background-color: #101010;*/
+}
+
+.nav-item {
+  --bs-nav-link-hover-color: #fad86a;
+}
+
+.block-info {
+}
+
+#info {
+  width: 100%;
+  background-image: url("../../assets/img/bg-galaxy.jpg");
+  background-size: cover;
+  /*transform: scaleX(-1);*/
+}
+
+.filler {
+  height: 100px;
+}
+
+@media (min-width: 1200px) {
+  .info-col {
+    padding-left: 90px;
+  }
+}
+
+.about-blokc {
+  margin-top: -10px;
+}
+
+@media (max-width: 992px) {
+  .blokc-meaning {
+    padding-left: 20px;
+    font-size: 7px !important;
+  }
+}
+
+@media (max-width: 992px) {
+  .about-blokc {
+    padding-left: 20px;
+  }
+}
+
+@media (min-width: 576px) {
+  .about-blokc {
+  }
+}
+
+@media (max-width: 576px) {
+  .info-col {
+    padding-top: 50px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    transition: 200ms linear;
+  }
+}
+
+@media (min-width: 1200px) {
+  .info-col {
+    padding-left: 45px !important;
+    transition: 200ms linear;
+  }
+}
+
+@media (min-width: 992px) {
+  .info-col {
+    /*padding-left: 15px;*/
+    padding-top: 50px;
+  }
+}
+
+@media (min-width: 768px) {
+  .info-col {
+    padding-top: 25px;
+  }
+}
+
+.speaker-heading {
+  margin-top: 10px;
+}
+
+.speaker-column {
+  padding-top: 20px;
+  padding-left: 40px;
+}
+
+.speaker-text {
+  font-weight: 300;
+  align-items: center;
+  color: rgb(255,255,255);
+  font-family: Poppins, sans-serif;
+  text-align: justify;
+  font-size: 17px;
+}
+
+.card-row {
+  min-height: 435px;
+}
+
+@media (max-width: 576px) {
+  .speaker-heading {
+    text-align: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .the-speaker {
+    padding-left: 114px !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .speaker-text {
+    max-width: 308px !important;
+  }
+}
+
