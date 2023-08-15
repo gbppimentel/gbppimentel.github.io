@@ -1,0 +1,22 @@
+<svg width="48" height="48" xmlns="http://www.w3.org/2000/svg">
+ <style type="text/css">.st0{display:none;}
+	.st1{fill:none;stroke:#ffffff;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st2{fill:#ffffff;}</style>
+
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="402" width="582" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <g id="Padding__x26__Artboard" class="st0"/>
+  <g stroke="null" id="Icons">
+   <g stroke="null" id="svg_1">
+    <path stroke="null" id="svg_2" d="m1.51055,3.646476l0,40.707064c0,2.51922 2.682765,4.131582 4.90737,2.949352l38.29896,-20.35355c2.363429,-1.256 2.363429,-4.642668 0,-5.898703l-38.29896,-20.35355c-2.224605,-1.182195 -4.90737,0.430167 -4.90737,2.949387z" class="st1"/>
+    <path stroke="null" id="svg_3" d="m44.716879,26.949377c2.363429,-1.256 2.363429,-4.642668 0,-5.898703l-38.29896,-20.35355" class="st1"/>
+    <line stroke="null" id="svg_4" y2="15.338315" y1="10.435035" x2="20.257215" x1="10.450692" class="st1"/>
+    <line stroke="null" id="svg_5" y2="19.196161" y1="18.048005" x2="27.854392" x1="25.418545" class="st1"/>
+   </g>
+  </g>
+ </g>
+</svg>
