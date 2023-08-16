@@ -285,3 +285,46 @@ function scrollToSection(sectionClass) {
     });
   }
 }
+
+// scroll to top function
+document.addEventListener("DOMContentLoaded", function () {
+  const backToTopButton = document.querySelector(".back-to-top");
+  let lastScrollY = window.scrollY;
+
+  window.addEventListener("scroll", () => {
+    const currentScrollY = window.scrollY;
+
+    if (currentScrollY > lastScrollY) {
+      // Scrolling down
+      backToTopButton.style.opacity = "1";
+    } else {
+      // Scrolling up
+      backToTopButton.style.opacity = "0";
+    }
+
+    lastScrollY = currentScrollY;
+  });
+
+  backToTopButton.addEventListener("click", () => {
+    const initialY = window.scrollY;
+    const targetY = 0;
+    const duration = 1500; // Adjust the duration as needed
+    let startTimestamp;
+
+    function scrollStep(timestamp) {
+      if (!startTimestamp) startTimestamp = timestamp;
+      const progress = timestamp - startTimestamp;
+      const easeInOutCubic = (t) =>
+        t < 0.5 ? 4 * t * t * t : (t - 1) * (2 * t - 2) * (2 * t - 2) + 1;
+      const percentage = progress / duration;
+
+      window.scrollTo(0, initialY - initialY * easeInOutCubic(percentage));
+
+      if (progress < duration) {
+        requestAnimationFrame(scrollStep);
+      }
+    }
+
+    requestAnimationFrame(scrollStep);
+  });
+});

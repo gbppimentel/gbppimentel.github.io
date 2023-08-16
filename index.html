@@ -11,14 +11,6 @@
     <title>GB | Glenn Bernard</title>
     <meta name="author" content="Themezinho" />
     <link rel="icon" href="images/logo.svg" type="image/svg+xml" />
-    <meta
-      name="description"
-      content="Verno | Creative Showcases for Agencies"
-    />
-    <meta
-      name="keywords"
-      content="creative, works, showcase, portfolio, highlight, projects, modern, agency, digital, studio, css, animation, transition, freelancers"
-    />
 
     <!-- FAVICON FILES -->
     <link
@@ -121,12 +113,11 @@
           <li>
             <a href="#">PROJECTS</a>
             <ul>
-              <li><a href="works.html"> GB Portfolio</a></li>
-              <li><a href="#">Whiskers</a></li>
-              <li><a href="#">PUP-STB Scholars Portal</a></li>
+              <li><a href="works.html"> Artworks</a></li>
+              <li><a href="#">Web Development</a></li>
             </ul>
           </li>
-          <li><a href="blog.html">EXTRAS</a></li>
+          <li><a href="blog.html">AWARDS</a></li>
           <li><a href="contact.html">CONTACT</a></li>
         </ul>
       </div>
@@ -236,21 +227,49 @@
                     font-family: 'Tilt Warp', cursive;
                     font-size: 100px;
                     color: #a82d39;
+                    text-align: center;
                   "
                 >
                   /$graphic design &
                 </h5>
                 <h2
                   data-swiper-parallax="-300"
-                  style="font-family: 'Tilt Warp', cursive; color: #ff4732"
+                  style="
+                    font-family: 'Tilt Warp', cursive;
+                    color: #ff4732;
+                    text-align: center;
+                  "
                 >
-                  .web development>
+                  .web development&gt;
                 </h2>
               </div>
             </div>
           </div>
 
+          <style>
+            /* Media Query for Small Screens */
+            @media screen and (max-width: 768px) {
+              h5 {
+                font-size: 40px;
+              }
+              h2 {
+                font-size: 50px;
+              }
+            }
+
+            /* Media Query for Mobile Phones */
+            @media screen and (max-width: 480px) {
+              h5 {
+                font-size: 30px;
+              }
+              h2 {
+                font-size: 40px;
+              }
+            }
+          </style>
+
           <!-- CAROUSEL 03 -->
+
           <div class="swiper-slide">
             <div
               class="slide-inner bg-image"
@@ -283,10 +302,10 @@
                 </h2>
 
                 <a
-                  href="#clients"
+                  href="#projects"
                   data-swiper-parallax="-100"
                   class="btn-ghost"
-                  onclick="scrollToSection('clients');"
+                  onclick="scrollToSection('projects');"
                 >
                   <span data-hover="BROWSE PROJECTS">EXPLORE PORTFOLIO</span>
                 </a>
@@ -295,7 +314,6 @@
             </div>
             <!-- end slide-inner -->
           </div>
-          <!-- end swiper-slide -->
         </div>
         <!-- end swiper-wrapper -->
         <div class="swiper-pagination"></div>
@@ -313,16 +331,116 @@
     </header>
     <!-- end header -->
     <main>
+      <section
+        class="works"
+        style="
+          background-image: url(images/about-me.png);
+          background-size: cover;
+        "
+      >
+        <div class="container">
+          <div style="text-align: center">
+            <div
+              class="works-title wow fadeIn"
+              style="display: inline-block; color: white"
+            >
+              <h2>ABOUT ME</h2>
+              <p>
+                We create digital experiences for brands communicating the
+                unique services provided to your customers. Creativity for us is
+                something personal.
+              </p>
+            </div>
+          </div>
+
+          <!-- end works-title -->
+        </div>
+        <!-- end container -->
+        <ul class="works-grid">
+          <li class="wow fadeIn" data-wow-delay="0s">
+            <figure>
+              <a href="works-single.html"
+                ><img src="images/works01.jpg" alt="Image"
+              /></a>
+              <figcaption>
+                <span></span> <small>Mobile App & UI-UX Design</small>
+                <h3>Start Engine</h3>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="wow fadeIn" data-wow-delay="0.1s">
+            <figure>
+              <a href="works-single.html"
+                ><img src="images/works02.jpg" alt="Image"
+              /></a>
+              <figcaption>
+                <span></span> <small>Corporate website & e-Commerce</small>
+                <h3>Kitchen</h3>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="wow fadeIn" data-wow-delay="0.2s">
+            <figure>
+              <a href="works-single.html"
+                ><img src="images/works03.jpg" alt="Image"
+              /></a>
+              <figcaption>
+                <span></span> <small>UI-UX Design & Mobile App</small>
+                <h3>Line Up</h3>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="wow fadeIn" data-wow-delay="0s">
+            <figure>
+              <a href="works-single.html"
+                ><img src="images/works04.jpg" alt="Image"
+              /></a>
+              <figcaption>
+                <span></span> <small>Corporate website & Mobile App</small>
+                <h3>Moviester</h3>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="wow fadeIn" data-wow-delay="0.1s">
+            <figure>
+              <a href="works-single.html"
+                ><img src="images/works05.jpg" alt="Image"
+              /></a>
+              <figcaption>
+                <span></span> <small>Mobile App & Website</small>
+                <h3>QBS Bank</h3>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="wow fadeIn" data-wow-delay="0.2s">
+            <figure>
+              <a href="works-single.html"
+                ><img src="images/works06.jpg" alt="Image"
+              /></a>
+              <figcaption>
+                <span></span> <small>e-Commerce & UI UX Design</small>
+                <h3>Eventer</h3>
+              </figcaption>
+            </figure>
+          </li>
+        </ul>
+      </section>
+      <!-- end works -->
+
+      <!-- duplicated works -->
       <section class="works">
         <div class="container">
-          <div class="works-title wow fadeIn">
-            <h2>SHOWCASES</h2>
-            <p>
-              We create digital experiences for brands communicating the unique
-              services provided to your customers. Creativity for us something
-              personal.
-            </p>
+          <div style="text-align: center">
+            <div class="works-title wow fadeIn" style="display: inline-block">
+              <h2>SHOWCASES</h2>
+              <p>
+                We create digital experiences for brands communicating the
+                unique services provided to your customers. Creativity for us is
+                something personal.
+              </p>
+            </div>
           </div>
+
           <!-- end works-title -->
         </div>
         <!-- end container -->
@@ -498,10 +616,10 @@
         <!-- end content-box -->
       </section>
       <!-- end icon-content-block -->
-      <section class="clients">
+      <section class="projects">
         <div class="container wow fadeIn">
           <h6>We offer the world’s leading brands premium digital solutions</h6>
-          <h2>PARTNERS</h2>
+          <h2>PROJECTS</h2>
           <ul>
             <li class="wow fadeIn" data-wow-delay="0s">
               <figure>
@@ -593,17 +711,30 @@
         <!-- end container -->
       </footer>
       <!-- end footer -->
-      <footer class="sub-footer">
+      <footer class="sub-footer" style="font-family: 'Tilt Warp', cursive">
         <div class="container wow fadeIn">
-          <small>All rights reserved 2019 © Verno</small>
+          <small>All rights reserved 2023 © GB | Glenn Bernard</small>
           <ul>
             <li><a href="#">Facebook</a></li>
             <li><a href="#">X</a></li>
-            <li><a href="#">Dribbble</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">LinkedIn</a></li>
+            <li><a href="#">Github</a></li>
           </ul>
         </div>
         <!-- end container -->
       </footer>
+
+      <!-- BACK TO TOP -->
+
+      <button class="back-to-top">
+        <svg height="1.2em" class="arrow" viewBox="0 0 512 512">
+          <path
+            d="M233.4 105.4c12.5-12.5 32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L256 173.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l192-192z"
+          ></path>
+        </svg>
+      </button>
+
       <!-- end sub-footer -->
     </main>
     <!-- end main -->
