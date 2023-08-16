@@ -1,0 +1,145 @@
+.about-me {
+  height: 500px;
+  width: 50px;
+  background-color: rgba(255, 255, 255, 0);
+  /* margin: 10px; */
+}
+
+.about-card {
+  overflow: hidden;
+  border-radius: 2rem;
+  max-width: 100%; /* Change this */
+
+  color: #212121;
+  margin: 0 auto; /* Add this */
+}
+.about-image01 {
+  height: 17rem; /* Adjust this */
+  width: 100%;
+  background-size: 150% 150%;
+  background-repeat: no-repeat;
+  background-position: center bottom -120px; /* Adjust the pixels as needed */
+  background-image: url(../images/webdev.svg); /* Replace with the actual path to your SVG file */
+}
+
+.about-image02 {
+  height: 17rem; /* Adjust this */
+  width: 100%;
+  background-size: 150% 150%;
+  background-repeat: no-repeat;
+  background-position: center bottom -120px; /* Adjust the pixels as needed */
+  background-image: url(../images/database.svg); /* Replace with the actual path to your SVG file */
+}
+
+.about-image03 {
+  height: 17rem; /* Adjust this */
+  width: 100%;
+  background-size: 150% 150%;
+  background-repeat: no-repeat;
+  background-position: center bottom -120px; /* Adjust the pixels as needed */
+  background-image: url(../images/games.svg); /* Replace with the actual path to your SVG file */
+}
+
+.about-image04 {
+  height: 17rem; /* Adjust this */
+  width: 100%;
+  background-size: 150% 150%;
+  background-repeat: no-repeat;
+  background-position: center bottom -90px; /* Adjust the pixels as needed */
+  background-image: url(../images/artworks.svg); /* Replace with the actual path to your SVG file */
+}
+
+.about-content01 {
+  padding: 1rem;
+  text-align: center;
+  background-color: #fff;
+  border-top: 5px solid #ffd47c;
+  min-height: 200px;
+}
+.about-content02 {
+  padding: 1rem;
+  text-align: center;
+  background-color: #fff;
+  border-top: 5px solid #e06c75;
+  min-height: 200px;
+}
+.about-content03 {
+  padding: 1rem;
+  text-align: center;
+  background-color: #fff;
+  border-top: 5px solid #61afef;
+  min-height: 200px;
+}
+.about-content04 {
+  padding: 1rem;
+  text-align: center;
+  background-color: #fff;
+  border-top: 5px solid #c678dd;
+  min-height: 200px;
+}
+
+.about-text-1 {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.about-text-2 {
+  margin-top: 1rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.about-text-2 span:first-child {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  font-weight: 900;
+}
+
+.about-text-2 span:last-child {
+  margin-top: 0.5rem;
+  display: block;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.about-action {
+  margin-top: 1rem;
+  display: inline-block;
+  width: 100%;
+  background-color: rgb(0, 0, 0);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-radius: 4px;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 1);
+  text-decoration: none;
+}
+
+.about-date {
+  margin-top: 1rem;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: rgba(156, 163, 175, 1);
+}
+
+#box {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 50%;
+  left: 50%;
+  margin: -25px 0 0 -25px;
+  background: tomato;
+  border-radius: 50%;
+  backface-visibility: hidden;
+  z-index: 99999;
+}

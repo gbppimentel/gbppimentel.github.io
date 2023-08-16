@@ -285,3 +285,110 @@ function scrollToSection(sectionClass) {
     });
   }
 }
+
+// scroll to top function
+document.addEventListener("DOMContentLoaded", function () {
+  const backToTopButton = document.querySelector(".back-to-top");
+  let lastScrollY = window.scrollY;
+
+  window.addEventListener("scroll", () => {
+    const currentScrollY = window.scrollY;
+
+    if (currentScrollY > lastScrollY) {
+      // Scrolling down
+      backToTopButton.style.opacity = "1";
+    } else {
+      // Scrolling up
+      backToTopButton.style.opacity = "0";
+    }
+
+    lastScrollY = currentScrollY;
+  });
+
+  backToTopButton.addEventListener("click", () => {
+    const initialY = window.scrollY;
+    const targetY = 0;
+    const duration = 1500; // Adjust the duration as needed
+    let startTimestamp;
+
+    function scrollStep(timestamp) {
+      if (!startTimestamp) startTimestamp = timestamp;
+      const progress = timestamp - startTimestamp;
+      const easeInOutCubic = (t) =>
+        t < 0.5 ? 4 * t * t * t : (t - 1) * (2 * t - 2) * (2 * t - 2) + 1;
+      const percentage = progress / duration;
+
+      window.scrollTo(0, initialY - initialY * easeInOutCubic(percentage));
+
+      if (progress < duration) {
+        requestAnimationFrame(scrollStep);
+      }
+    }
+
+    requestAnimationFrame(scrollStep);
+  });
+});
+
+// scrollbar
+
+const colors = ["#FFD47C", "#FA8231", "#E06C75", "#61AFEF", "#C678DD"];
+let currentIndex = 0;
+
+window.addEventListener("scroll", () => {
+  const scrollPercentage =
+    window.scrollY /
+    (document.documentElement.scrollHeight - window.innerHeight);
+  const colorIndex = Math.floor(scrollPercentage * colors.length);
+
+  if (colorIndex !== currentIndex) {
+    currentIndex = colorIndex;
+    updateScrollbarColor(colors[currentIndex]);
+  }
+});
+
+function updateScrollbarColor(color) {
+  document.documentElement.style.setProperty("--scrollbar-color", color);
+}
+
+//mouse
+var box = document.getElementById("box");
+var colorChangeInterval = 1000; // Change color every 2 seconds
+var followDelay = 60; // Delay in milliseconds before the box starts following
+var followSpeed = 0.1; // Adjust the follow speed as needed
+
+var targetX = window.innerWidth / 2;
+var targetY = window.innerHeight / 2;
+var currentX = targetX;
+var currentY = targetY;
+
+function getRandomColor() {
+  var colors = ["#e06c75", "#61afef", "#c678dd", "#fa8231", "#73ac5d"];
+  return colors[Math.floor(Math.random() * colors.length)];
+}
+
+function changeColor() {
+  box.style.backgroundColor = getRandomColor();
+}
+
+function moveBox(e) {
+  targetX = e.pageX;
+  targetY = e.pageY;
+}
+
+function animateBox() {
+  var dx = targetX - currentX;
+  var dy = targetY - currentY;
+
+  currentX += dx * followSpeed;
+  currentY += dy * followSpeed;
+
+  box.style.left = currentX - 25 + "px";
+  box.style.top = currentY - 25 + "px";
+
+  requestAnimationFrame(animateBox);
+}
+
+window.addEventListener("mousemove", moveBox);
+setInterval(changeColor, colorChangeInterval); // Change color every 2 seconds
+
+animateBox();

@@ -9,44 +9,8 @@
     <meta name="format-detection" content="telephone=no" />
     <meta name="theme-color" content="#f03a37" />
     <title>GB | Glenn Bernard</title>
-    <meta name="author" content="Themezinho" />
+
     <link rel="icon" href="images/logo.svg" type="image/svg+xml" />
-    <meta
-      name="description"
-      content="Verno | Creative Showcases for Agencies"
-    />
-    <meta
-      name="keywords"
-      content="creative, works, showcase, portfolio, highlight, projects, modern, agency, digital, studio, css, animation, transition, freelancers"
-    />
-
-    <!-- SOCIAL MEDIA META -->
-    <meta
-      property="og:description"
-      content="Verno | Creative Showcases for Agencies"
-    />
-    <meta
-      property="og:image"
-      content="http://www.themezinho.net/verno/preview.png"
-    />
-    <meta property="og:site_name" content="verno" />
-    <meta property="og:title" content="verno" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="http://www.themezinho.net/verno" />
-
-    <!-- TWITTER META -->
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:site" content="@verno" />
-    <meta name="twitter:creator" content="@verno" />
-    <meta name="twitter:title" content="verno" />
-    <meta
-      name="twitter:description"
-      content="Verno | Creative Showcases for Agencies"
-    />
-    <meta
-      name="twitter:image"
-      content="http://www.themezinho.net/verno/preview.png"
-    />
 
     <!-- FAVICON FILES -->
     <link
@@ -79,8 +43,10 @@
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/pdf-button.css" />
+    <link rel="stylesheet" href="css/about-me.css" />
   </head>
   <body>
+    <!-- PRE LOADER -->
     <div class="preloader">
       <div class="layer"></div>
       <div class="inner">
@@ -132,56 +98,43 @@
             stroke-linecap="round"
           ></circle>
         </svg>
-        <!-- <figure><img src="images/loading.gif" alt="Image" /></figure>
-        <span class="typewriter" id="typewriter"></span> -->
       </div>
-      <!-- end inner -->
     </div>
-    <!-- end preloader -->
+
+    <!-- NAVIGATION MENU -->
     <div class="navigation-menu">
       <div class="nav-bg"></div>
-      <!-- end nav-bg -->
       <div class="nav-bg2"></div>
-      <!-- end nav-bg2 -->
       <div class="inner">
-        <!-- <address>
-          <span>ADDRESS</span>
-          <p>
-            Boryissa Hymri Str. No : 126<br />
-            Poxniaky Greenline<br />
-            Kiev - Ukraine
-          </p>
-        </address> -->
         <ul>
           <li>
             <a href="#">HOME</a>
           </li>
-          <li><a href="verno.html">ABOUT ME</a></li>
+          <li><a href="#works">ABOUT ME</a></li>
           <li>
             <a href="#">PROJECTS</a>
             <ul>
-              <li><a href="#">GB Portfolio</a></li>
-               <li><a href="#">Whisker</a></li>
-               <li><a href="#">PUP-STB Scholars Portal</a></li>
+              <li><a href="#"> Artworks</a></li>
+              <li><a href="#">Web Development</a></li>
             </ul>
           </li>
           <li><a href="#">AWARDS</a></li>
           <li><a href="#">CONTACT</a></li>
         </ul>
       </div>
-      <!-- end inner -->
     </div>
-    <!-- end navigation-menu -->
+
     <div class="transition-overlay">
       <div class="layer"></div>
-      <!-- end layer -->
     </div>
-    <!-- end transition-overlay -->
+    <section id="canvas">
+      <div id="box"></div>
+    </section>
     <nav class="navbar">
       <div class="logo">
         <a href="index.html"><img src="images/logo.png" alt="Image" /></a>
       </div>
-      <!-- end logo -->
+
       <div class="sandwich-nav">
         <div class="sandwich-text">
           <b
@@ -189,39 +142,15 @@
             CLOSE</b
           >
         </div>
-        <!-- end sandwich-text -->
+
         <div class="sandwich-btn" id="sandwich-btn">
           <span></span> <span></span>
         </div>
-        <!-- end sandwich-btn -->
       </div>
-      <!-- end sandwich-nav -->
     </nav>
-    <!-- end navbar -->
+
     <header class="header">
-      <!-- <aside class="soundbar">
-        <div class="sound">
-          <div class="sound-title">SOUND</div>
-          <!-- end sound-title -->
-          <div class="equalizer">
-            <div class="holder">
-              <span></span> <span></span> <span></span> <span></span
-              ><span></span><span></span>
-            </div>
-            <!-- end holder -->
-          </div>
-          <!-- end equalizer -->
-          <div class="sound-text">
-            <b
-              >OFF<br />
-              ON</b
-            >
-          </div>
-          <!-- end sound-text -->
-        </div>
-        <!-- end sound -->
-      </aside> -->
-      <!-- end soundbar -->
+      <!-- HEADER SOCIALS -->
       <ul class="social-media" style="font-family: 'Tilt Warp', cursive">
         <li>
           <a href="https://www.facebook.com/glennbernardpalmapimentel"
@@ -237,14 +166,13 @@
           >
         </li>
         <li>
-          <a
-            href="https://github.com/gbppimentel"
-            >Github</a
-          >
+          <a href="https://github.com/gbppimentel">Github</a>
         </li>
       </ul>
+
       <div class="swiper-container">
         <div class="swiper-wrapper">
+          <!-- CAROUSEL 01 -->
           <div class="swiper-slide">
             <div
               class="slide-inner bg-image"
@@ -286,35 +214,65 @@
                   <span data-hover="OPEN MY PDF">VIEW RESUME</span>
                 </a>
               </div>
-              <!-- end container -->
             </div>
-            <!-- end slide-inner -->
           </div>
-          <!-- end swiper-slide -->
+
+          <!-- CAROUSEL 02 -->
           <div class="swiper-slide">
             <div
               class="slide-inner bg-image"
               data-background="images/slide02.png"
             >
               <div class="container">
-                <h5 data-swiper-parallax="-200" style="font-family: 'Tilt Warp', cursive; font-size: 100px; color: #A82D39;" >
-                /$graphic design &
+                <h5
+                  data-swiper-parallax="-200"
+                  style="
+                    font-family: 'Tilt Warp', cursive;
+                    font-size: 100px;
+                    color: #a82d39;
+                    text-align: center;
+                  "
+                >
+                  /$graphic design &
                 </h5>
-                <h2 data-swiper-parallax="-300" style="font-family: 'Tilt Warp', cursive; color: #FF4732; ">.web development></h2>
-                
-                <!-- <a
-                  href="videos/video.mp4"
-                  data-swiper-parallax="-100"
-                  class="btn-play"
-                  data-fancybox
-                  ><img src="images/icon-play.svg" alt="Image"
-                /></a> -->
+                <h2
+                  data-swiper-parallax="-300"
+                  style="
+                    font-family: 'Tilt Warp', cursive;
+                    color: #ff4732;
+                    text-align: center;
+                  "
+                >
+                  .web development&gt;
+                </h2>
               </div>
-              <!-- end container -->
             </div>
-            <!-- end slide-inner -->
           </div>
-          <!-- end swiper-slide -->
+
+          <style>
+            /* Media Query for Small Screens */
+            @media screen and (max-width: 768px) {
+              h5 {
+                font-size: 40px;
+              }
+              h2 {
+                font-size: 50px;
+              }
+            }
+
+            /* Media Query for Mobile Phones */
+            @media screen and (max-width: 480px) {
+              h5 {
+                font-size: 30px;
+              }
+              h2 {
+                font-size: 40px;
+              }
+            }
+          </style>
+
+          <!-- CAROUSEL 03 -->
+
           <div class="swiper-slide">
             <div
               class="slide-inner bg-image"
@@ -322,21 +280,55 @@
             >
               <div class="container">
                 <h5 data-swiper-parallax="-200">
-                  <h2  data-swiper-parallax="-300" class="no-capitalization" style="font-family: 'Tilt Warp', cursive; font-size: 80px; " ><span  style="font-family: 'Poppins', sans-serif;">&#123;</span> interactive frontend </h2>
+                  <h2
+                    data-swiper-parallax="-300"
+                    class="no-capitalization"
+                    style="font-family: 'Tilt Warp', cursive; font-size: 80px"
+                  >
+                    <span style="font-family: 'Poppins', sans-serif"
+                      >&#123;</span
+                    >
+                    interactive frontend
+                  </h2>
                 </h5>
-                
-                <h2  data-swiper-parallax="-200"  style="font-family: 'Tilt Warp', cursive; font-size: 110px; color: #EEE370;"> seamless backend <span style="font-family: 'Poppins', sans-serif">&#125;</span></h2>
 
-                <a href="#clients" data-swiper-parallax="-100" class="btn-ghost" onclick="scrollToSection('clients');">
+                <h2
+                  data-swiper-parallax="-200"
+                  style="
+                    font-family: 'Tilt Warp', cursive;
+                    font-size: 110px;
+                    color: #eee370;
+                  "
+                >
+                  seamless backend
+                  <span style="font-family: 'Poppins', sans-serif">&#125;</span>
+                </h2>
+
+                <a
+                  href="#projects"
+                  class="btn-ghost"
+                  onclick="scrollToSection('projects');"
+                >
                   <span data-hover="BROWSE PROJECTS">EXPLORE PORTFOLIO</span>
                 </a>
-                
+
+                <script>
+                  function scrollToSection(sectionId) {
+                    var section = document.getElementById(sectionId);
+                    if (section) {
+                      section.scrollIntoView({
+                        behavior: "smooth", // Add smooth scrolling behavior
+                        block: "start", // Scroll to the start of the section
+                        inline: "nearest", // Align the section to the nearest edge
+                      });
+                    }
+                  }
+                </script>
               </div>
               <!-- end container -->
             </div>
             <!-- end slide-inner -->
           </div>
-          <!-- end swiper-slide -->
         </div>
         <!-- end swiper-wrapper -->
         <div class="swiper-pagination"></div>
@@ -354,15 +346,237 @@
     </header>
     <!-- end header -->
     <main>
-      
-      
- 
+      <section
+        class="works"
+        style="
+          background-image: url(images/about-me.png);
+          background-size: cover;
+          min-height: 1020px;
+        "
+      >
+        <div class="container">
+          <div style="text-align: center">
+            <div
+              class="works-title wow fadeIn"
+              style="display: inline-block; color: white; margin-bottom: 10px"
+            >
+              <h2>ABOUT ME</h2>
+
+              <p
+                style="
+                  text-align: justify;
+                  font-family: 'Poppins';
+                  color: white;
+                  font-weight: 500;
+                  margin-top: 25px;
+                "
+              >
+                Hello, I'm Glenn – a digital creator experienced in crafting web
+                applications, handling databases, designing games, and producing
+                artworks. Scroll down to learn more about me.
+              </p>
+            </div>
+          </div>
+
+          <!-- end works-title -->
+        </div>
+
+        <!-- end container -->
+
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-12 col-md-3 about-me">
+              <div class="about-card">
+                <div class="about-image01"></div>
+                <div class="about-content01">
+                  <p
+                    class="about-text-1"
+                    style="
+                      text-transform: none;
+                      font-family: 'Roboto', sans-serif;
+                      font-weight: 400;
+                    "
+                  >
+                    From front-end to back-end, I love to create online
+                    experiences. With
+                    <span style="color: #e06c75; font-weight: 600">React</span>,
+                    I code efficient designs with powerful functionality. My
+                    expertise in
+                    <span style="color: #61afef; font-weight: 600">CSS</span>
+                    and
+                    <span style="color: #c678dd; font-weight: 600"
+                      >Bootstrap</span
+                    >
+                    help me publish responsive layouts. I ensure consistent user
+                    experiences. I prototype on
+                    <span style="color: #fa8231; font-weight: 600">Figma</span>,
+                    deploy on
+                    <span style="color: #73ac5d; font-weight: 600">Vercel</span
+                    >/<span style="color: #61afef; font-weight: 600"
+                      >GitHub Pages</span
+                    >
+                    - turning visions into live websites.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-3 about-me">
+              <div class="about-card">
+                <div class="about-image02"></div>
+                <div class="about-content02">
+                  <p
+                    class="about-text-1"
+                    style="
+                      text-transform: none;
+                      font-family: 'Roboto', sans-serif;
+                      font-weight: 400;
+                    "
+                  >
+                    I contributed building full-stack web services. I have
+                    relevant experience in
+                    <span style="color: #e06c75; font-weight: 600">mySQL</span>
+                    and
+                    <span style="color: #61afef; font-weight: 600">PHP</span>.
+                    For now, I'm currently studying
+                    <span style="color: #73ac5d; font-weight: 600">MongoDB</span
+                    >. I create, optimize, and secure databases. I use
+                    <span style="color: #fa8231; font-weight: 600"
+                      >PHPMyAdmin</span
+                    >
+                    for efficient administration, guaranteeing data integrity.
+                    Whether structuring
+                    <span style="color: #c678dd; font-weight: 600"
+                      >queries</span
+                    >
+                    or designing relational databases, I ensure seamless
+                    back-end.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-3 about-me">
+              <div class="about-card">
+                <div class="about-image03"></div>
+                <div class="about-content03">
+                  <p
+                    class="about-text-1"
+                    style="
+                      text-transform: none;
+                      font-family: 'Roboto', sans-serif;
+                      font-weight: 400;
+                    "
+                  >
+                    Gaming is my passion since I was young. I tinkered with
+                    <span style="color: #e06c75; font-weight: 600">Unity</span>,
+                    and built multiple
+                    <span style="color: #61afef; font-weight: 600">Ren'py</span>
+                    VN games. I love to tell 2D stories and wonders with
+                    engaging narratives. Proficient in objective
+                    <span style="color: #fa8231; font-weight: 600">C#</span>,
+                    <span style="color: #c678dd; font-weight: 600">C++</span>,
+                    and
+                    <span style="color: #73ac5d; font-weight: 600"
+                      >scripting</span
+                    >, I code intricate gameplay and interfaces. Beyond code, I
+                    take account performance for an immersive player experience.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-3 about-me">
+              <div class="about-card">
+                <div class="about-image04"></div>
+                <div class="about-content04">
+                  <p
+                    class="about-text-1"
+                    style="
+                      text-transform: none;
+                      font-family: 'Roboto', sans-serif;
+                      font-weight: 400;
+                    "
+                  >
+                    Creativity is the word that defines me. With tools like
+                    <span style="color: #e06c75; font-weight: 600"
+                      >Photoshop</span
+                    >,
+                    <span style="color: #61afef; font-weight: 600"
+                      >Procreate</span
+                    >, and
+                    <span style="color: #fa8231; font-weight: 600"
+                      >Illustrator</span
+                    >, I craft digital art that speaks volumes. From
+                    illustrations, vector graphics, and 3D art I visualize ideas
+                    across platforms. I am well versed in
+                    <span style="color: #c678dd; font-weight: 600">Figma</span>
+                    and
+                    <span style="color: #73ac5d; font-weight: 600">Canva</span>
+                    as I love to design engaging user interfaces and captivating
+                    digital content.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end works -->
+
+      <!-- end clients -->
+      <footer class="footer">
+        <div class="container">
+          <div class="content-box wow fadeIn" data-wow-delay="0s">
+            <p style="font-family: 'Roboto', sans-serif">
+              🚧 Work in Progress 🚧
+            </p>
+          </div>
+          <!-- end content-box -->
+          <div class="content-box wow fadeIn" data-wow-delay="0.1s">
+            <p style="font-family: 'Roboto', sans-serif">
+              🚧 Work in Progress 🚧
+            </p>
+          </div>
+          <!-- end content-box -->
+          <div class="content-box wow fadeIn" data-wow-delay="0.2s">
+            <p style="font-family: 'Roboto', sans-serif">
+              🚧 Work in Progress 🚧
+            </p>
+          </div>
+          <!-- end content-box -->
+        </div>
+        <!-- end container -->
+      </footer>
+      <!-- end footer -->
+      <footer class="sub-footer" style="font-family: 'Tilt Warp', cursive">
+        <div class="container wow fadeIn">
+          <small>All rights reserved 2023 © GB | Glenn Bernard</small>
+          <ul>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">X</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">LinkedIn</a></li>
+            <li><a href="#">Github</a></li>
+          </ul>
+        </div>
+        <!-- end container -->
+      </footer>
+
+      <!-- BACK TO TOP -->
+
+      <button class="back-to-top">
+        <svg height="1.2em" class="arrow" viewBox="0 0 512 512">
+          <path
+            d="M233.4 105.4c12.5-12.5 32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L256 173.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l192-192z"
+          ></path>
+        </svg>
+      </button>
+
       <!-- end sub-footer -->
     </main>
     <!-- end main -->
     <audio id="link" src="audio/link.mp3" preload="auto"></audio>
 
     <!-- JS FILES -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/swiper.min.js"></script>
