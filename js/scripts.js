@@ -328,3 +328,67 @@ document.addEventListener("DOMContentLoaded", function () {
     requestAnimationFrame(scrollStep);
   });
 });
+
+// scrollbar
+
+const colors = ["#FFD47C", "#FA8231", "#E06C75", "#61AFEF", "#C678DD"];
+let currentIndex = 0;
+
+window.addEventListener("scroll", () => {
+  const scrollPercentage =
+    window.scrollY /
+    (document.documentElement.scrollHeight - window.innerHeight);
+  const colorIndex = Math.floor(scrollPercentage * colors.length);
+
+  if (colorIndex !== currentIndex) {
+    currentIndex = colorIndex;
+    updateScrollbarColor(colors[currentIndex]);
+  }
+});
+
+function updateScrollbarColor(color) {
+  document.documentElement.style.setProperty("--scrollbar-color", color);
+}
+
+//mouse
+var box = document.getElementById("box");
+var colorChangeInterval = 1000; // Change color every 2 seconds
+var followDelay = 60; // Delay in milliseconds before the box starts following
+var followSpeed = 0.1; // Adjust the follow speed as needed
+
+var targetX = window.innerWidth / 2;
+var targetY = window.innerHeight / 2;
+var currentX = targetX;
+var currentY = targetY;
+
+function getRandomColor() {
+  var colors = ["#e06c75", "#61afef", "#c678dd", "#fa8231", "#73ac5d"];
+  return colors[Math.floor(Math.random() * colors.length)];
+}
+
+function changeColor() {
+  box.style.backgroundColor = getRandomColor();
+}
+
+function moveBox(e) {
+  targetX = e.pageX;
+  targetY = e.pageY;
+}
+
+function animateBox() {
+  var dx = targetX - currentX;
+  var dy = targetY - currentY;
+
+  currentX += dx * followSpeed;
+  currentY += dy * followSpeed;
+
+  box.style.left = currentX - 25 + "px";
+  box.style.top = currentY - 25 + "px";
+
+  requestAnimationFrame(animateBox);
+}
+
+window.addEventListener("mousemove", moveBox);
+setInterval(changeColor, colorChangeInterval); // Change color every 2 seconds
+
+animateBox();

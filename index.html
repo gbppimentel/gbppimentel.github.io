@@ -43,6 +43,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/pdf-button.css" />
+    <link rel="stylesheet" href="css/about-me.css" />
   </head>
   <body>
     <!-- PRE LOADER -->
@@ -109,16 +110,16 @@
           <li>
             <a href="#">HOME</a>
           </li>
-          <li><a href="verno.html">ABOUT ME</a></li>
+          <li><a href="#works">ABOUT ME</a></li>
           <li>
             <a href="#">PROJECTS</a>
             <ul>
-              <li><a href="works.html"> Artworks</a></li>
+              <li><a href="#"> Artworks</a></li>
               <li><a href="#">Web Development</a></li>
             </ul>
           </li>
-          <li><a href="blog.html">AWARDS</a></li>
-          <li><a href="contact.html">CONTACT</a></li>
+          <li><a href="#">AWARDS</a></li>
+          <li><a href="#">CONTACT</a></li>
         </ul>
       </div>
     </div>
@@ -126,7 +127,9 @@
     <div class="transition-overlay">
       <div class="layer"></div>
     </div>
-
+    <section id="canvas">
+      <div id="box"></div>
+    </section>
     <nav class="navbar">
       <div class="logo">
         <a href="index.html"><img src="images/logo.png" alt="Image" /></a>
@@ -303,12 +306,24 @@
 
                 <a
                   href="#projects"
-                  data-swiper-parallax="-100"
                   class="btn-ghost"
                   onclick="scrollToSection('projects');"
                 >
                   <span data-hover="BROWSE PROJECTS">EXPLORE PORTFOLIO</span>
                 </a>
+
+                <script>
+                  function scrollToSection(sectionId) {
+                    var section = document.getElementById(sectionId);
+                    if (section) {
+                      section.scrollIntoView({
+                        behavior: "smooth", // Add smooth scrolling behavior
+                        block: "start", // Scroll to the start of the section
+                        inline: "nearest", // Align the section to the nearest edge
+                      });
+                    }
+                  }
+                </script>
               </div>
               <!-- end container -->
             </div>
@@ -336,187 +351,216 @@
         style="
           background-image: url(images/about-me.png);
           background-size: cover;
+          min-height: 1020px;
         "
       >
         <div class="container">
           <div style="text-align: center">
             <div
               class="works-title wow fadeIn"
-              style="display: inline-block; color: white"
+              style="display: inline-block; color: white; margin-bottom: 10px"
             >
               <h2>ABOUT ME</h2>
-              <p>
-                We create digital experiences for brands communicating the
-                unique services provided to your customers. Creativity for us is
-                something personal.
+
+              <p
+                style="
+                  text-align: justify;
+                  font-family: 'Poppins';
+                  color: white;
+                  font-weight: 500;
+                  margin-top: 25px;
+                "
+              >
+                Hello, I'm Glenn – a digital creator experienced in crafting web
+                applications, handling databases, designing games, and producing
+                artworks. Scroll down to learn more about me.
               </p>
             </div>
           </div>
 
           <!-- end works-title -->
         </div>
+
         <!-- end container -->
-        <ul class="works-grid">
-          <li class="wow fadeIn" data-wow-delay="0s">
-            <figure>
-              <a href="works-single.html"
-                ><img src="images/works01.jpg" alt="Image"
-              /></a>
-              <figcaption>
-                <span></span> <small>Mobile App & UI-UX Design</small>
-                <h3>Start Engine</h3>
-              </figcaption>
-            </figure>
-          </li>
-          <li class="wow fadeIn" data-wow-delay="0.1s">
-            <figure>
-              <a href="works-single.html"
-                ><img src="images/works02.jpg" alt="Image"
-              /></a>
-              <figcaption>
-                <span></span> <small>Corporate website & e-Commerce</small>
-                <h3>Kitchen</h3>
-              </figcaption>
-            </figure>
-          </li>
-          <li class="wow fadeIn" data-wow-delay="0.2s">
-            <figure>
-              <a href="works-single.html"
-                ><img src="images/works03.jpg" alt="Image"
-              /></a>
-              <figcaption>
-                <span></span> <small>UI-UX Design & Mobile App</small>
-                <h3>Line Up</h3>
-              </figcaption>
-            </figure>
-          </li>
-          <li class="wow fadeIn" data-wow-delay="0s">
-            <figure>
-              <a href="works-single.html"
-                ><img src="images/works04.jpg" alt="Image"
-              /></a>
-              <figcaption>
-                <span></span> <small>Corporate website & Mobile App</small>
-                <h3>Moviester</h3>
-              </figcaption>
-            </figure>
-          </li>
-          <li class="wow fadeIn" data-wow-delay="0.1s">
-            <figure>
-              <a href="works-single.html"
-                ><img src="images/works05.jpg" alt="Image"
-              /></a>
-              <figcaption>
-                <span></span> <small>Mobile App & Website</small>
-                <h3>QBS Bank</h3>
-              </figcaption>
-            </figure>
-          </li>
-          <li class="wow fadeIn" data-wow-delay="0.2s">
-            <figure>
-              <a href="works-single.html"
-                ><img src="images/works06.jpg" alt="Image"
-              /></a>
-              <figcaption>
-                <span></span> <small>e-Commerce & UI UX Design</small>
-                <h3>Eventer</h3>
-              </figcaption>
-            </figure>
-          </li>
-        </ul>
+
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-12 col-md-3 about-me">
+              <div class="about-card">
+                <div class="about-image01"></div>
+                <div class="about-content01">
+                  <p
+                    class="about-text-1"
+                    style="
+                      text-transform: none;
+                      font-family: 'Roboto', sans-serif;
+                      font-weight: 400;
+                    "
+                  >
+                    From front-end to back-end, I love to create online
+                    experiences. With
+                    <span style="color: #e06c75; font-weight: 600">React</span>,
+                    I code efficient designs with powerful functionality. My
+                    expertise in
+                    <span style="color: #61afef; font-weight: 600">CSS</span>
+                    and
+                    <span style="color: #c678dd; font-weight: 600"
+                      >Bootstrap</span
+                    >
+                    help me publish responsive layouts. I ensure consistent user
+                    experiences. I prototype on
+                    <span style="color: #fa8231; font-weight: 600">Figma</span>,
+                    deploy on
+                    <span style="color: #73ac5d; font-weight: 600">Vercel</span
+                    >/<span style="color: #61afef; font-weight: 600"
+                      >GitHub Pages</span
+                    >
+                    - turning visions into live websites.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-3 about-me">
+              <div class="about-card">
+                <div class="about-image02"></div>
+                <div class="about-content02">
+                  <p
+                    class="about-text-1"
+                    style="
+                      text-transform: none;
+                      font-family: 'Roboto', sans-serif;
+                      font-weight: 400;
+                    "
+                  >
+                    I contributed building full-stack web services. I have
+                    relevant experience in
+                    <span style="color: #e06c75; font-weight: 600">mySQL</span>
+                    and
+                    <span style="color: #61afef; font-weight: 600">PHP</span>.
+                    For now, I'm currently studying
+                    <span style="color: #73ac5d; font-weight: 600">MongoDB</span
+                    >. I create, optimize, and secure databases. I use
+                    <span style="color: #fa8231; font-weight: 600"
+                      >PHPMyAdmin</span
+                    >
+                    for efficient administration, guaranteeing data integrity.
+                    Whether structuring
+                    <span style="color: #c678dd; font-weight: 600"
+                      >queries</span
+                    >
+                    or designing relational databases, I ensure seamless
+                    back-end.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-3 about-me">
+              <div class="about-card">
+                <div class="about-image03"></div>
+                <div class="about-content03">
+                  <p
+                    class="about-text-1"
+                    style="
+                      text-transform: none;
+                      font-family: 'Roboto', sans-serif;
+                      font-weight: 400;
+                    "
+                  >
+                    Gaming is my passion since I was young. I tinkered with
+                    <span style="color: #e06c75; font-weight: 600">Unity</span>,
+                    and built multiple
+                    <span style="color: #61afef; font-weight: 600">Ren'py</span>
+                    VN games. I love to tell 2D stories and wonders with
+                    engaging narratives. Proficient in objective
+                    <span style="color: #fa8231; font-weight: 600">C#</span>,
+                    <span style="color: #c678dd; font-weight: 600">C++</span>,
+                    and
+                    <span style="color: #73ac5d; font-weight: 600"
+                      >scripting</span
+                    >, I code intricate gameplay and interfaces. Beyond code, I
+                    take account performance for an immersive player experience.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-3 about-me">
+              <div class="about-card">
+                <div class="about-image04"></div>
+                <div class="about-content04">
+                  <p
+                    class="about-text-1"
+                    style="
+                      text-transform: none;
+                      font-family: 'Roboto', sans-serif;
+                      font-weight: 400;
+                    "
+                  >
+                    Creativity is the word that defines me. With tools like
+                    <span style="color: #e06c75; font-weight: 600"
+                      >Photoshop</span
+                    >,
+                    <span style="color: #61afef; font-weight: 600"
+                      >Procreate</span
+                    >, and
+                    <span style="color: #fa8231; font-weight: 600"
+                      >Illustrator</span
+                    >, I craft digital art that speaks volumes. From
+                    illustrations, vector graphics, and 3D art I visualize ideas
+                    across platforms. I am well versed in
+                    <span style="color: #c678dd; font-weight: 600">Figma</span>
+                    and
+                    <span style="color: #73ac5d; font-weight: 600">Canva</span>
+                    as I love to design engaging user interfaces and captivating
+                    digital content.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
       <!-- end works -->
 
-      <!-- duplicated works -->
-      <section class="works">
+      <section class="awards" id="odometer">
         <div class="container">
-          <div style="text-align: center">
-            <div class="works-title wow fadeIn" style="display: inline-block">
-              <h2>SHOWCASES</h2>
+          <div class="row">
+            <div class="col-lg-7 text-center">
+              <div class="row inner">
+                <div class="col-4 wow fadeIn">
+                  <figure><img src="images/awards01.png" alt="Image" /></figure>
+                  <span class="odometer" id="1"></span><small>+</small>
+                </div>
+                <!-- end col-4 -->
+                <div class="col-4 wow fadeIn" data-wow-delay="0.1s">
+                  <figure><img src="images/awards02.png" alt="Image" /></figure>
+                  <span class="odometer" id="2"></span><small>%</small>
+                </div>
+                <!-- end col-4 -->
+                <div class="col-4 wow fadeIn" data-wow-delay="0.2s">
+                  <figure><img src="images/awards03.png" alt="Image" /></figure>
+                  <span class="odometer" id="3"></span><small>k</small>
+                </div>
+                <!-- end col-4 -->
+              </div>
+              <!-- end row inner -->
+            </div>
+            <!-- end col-7 -->
+            <div class="col-lg-5 text-right wow fadeIn" data-wow-delay="0.3s">
+              <h4>Reach goals and keep working</h4>
               <p>
-                We create digital experiences for brands communicating the
-                unique services provided to your customers. Creativity for us is
-                something personal.
+                We split between creative strategies and digital experiences,
+                finding strong messages and visual essence
               </p>
             </div>
+            <!--end col-5 -->
           </div>
-
-          <!-- end works-title -->
+          <!-- end row -->
         </div>
         <!-- end container -->
-        <ul class="works-grid">
-          <li class="wow fadeIn" data-wow-delay="0s">
-            <figure>
-              <a href="works-single.html"
-                ><img src="images/works01.jpg" alt="Image"
-              /></a>
-              <figcaption>
-                <span></span> <small>Mobile App & UI-UX Design</small>
-                <h3>Start Engine</h3>
-              </figcaption>
-            </figure>
-          </li>
-          <li class="wow fadeIn" data-wow-delay="0.1s">
-            <figure>
-              <a href="works-single.html"
-                ><img src="images/works02.jpg" alt="Image"
-              /></a>
-              <figcaption>
-                <span></span> <small>Corporate website & e-Commerce</small>
-                <h3>Kitchen</h3>
-              </figcaption>
-            </figure>
-          </li>
-          <li class="wow fadeIn" data-wow-delay="0.2s">
-            <figure>
-              <a href="works-single.html"
-                ><img src="images/works03.jpg" alt="Image"
-              /></a>
-              <figcaption>
-                <span></span> <small>UI-UX Design & Mobile App</small>
-                <h3>Line Up</h3>
-              </figcaption>
-            </figure>
-          </li>
-          <li class="wow fadeIn" data-wow-delay="0s">
-            <figure>
-              <a href="works-single.html"
-                ><img src="images/works04.jpg" alt="Image"
-              /></a>
-              <figcaption>
-                <span></span> <small>Corporate website & Mobile App</small>
-                <h3>Moviester</h3>
-              </figcaption>
-            </figure>
-          </li>
-          <li class="wow fadeIn" data-wow-delay="0.1s">
-            <figure>
-              <a href="works-single.html"
-                ><img src="images/works05.jpg" alt="Image"
-              /></a>
-              <figcaption>
-                <span></span> <small>Mobile App & Website</small>
-                <h3>QBS Bank</h3>
-              </figcaption>
-            </figure>
-          </li>
-          <li class="wow fadeIn" data-wow-delay="0.2s">
-            <figure>
-              <a href="works-single.html"
-                ><img src="images/works06.jpg" alt="Image"
-              /></a>
-              <figcaption>
-                <span></span> <small>e-Commerce & UI UX Design</small>
-                <h3>Eventer</h3>
-              </figcaption>
-            </figure>
-          </li>
-        </ul>
       </section>
-      <!-- end works -->
       <section
         class="side-content-block bg-image"
-        data-background="images/side-image01.jpg"
+        data-background="images/backside-bg.png"
       >
         <div class="container">
           <div class="inner">
@@ -741,6 +785,7 @@
     <audio id="link" src="audio/link.mp3" preload="auto"></audio>
 
     <!-- JS FILES -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/swiper.min.js"></script>

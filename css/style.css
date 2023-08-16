@@ -51,6 +51,7 @@ theme.
 @import url("https://fonts.googleapis.com/css?family=Libre+Baskerville:400|Poppins:300,400,600,800&subset=latin-ext");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 /* BODY */
 body {
   height: 100%;
@@ -2752,7 +2753,7 @@ main {
   transition: opacity 0.3s, background 0.7s ease-out, transform 0.5s ease-out,
     border-color 0.3s ease-out;
   z-index: 9999;
-  border: 5px solid #081e43; /* Add 3px border */
+  border: 5px solid #323434; /* Add 3px border */
   outline: none;
 }
 
@@ -2784,7 +2785,7 @@ main {
 .back-to-top:hover {
   opacity: 1;
   /* background: linear-gradient(to bottom, #e06c75, #ffd47c); */
-  transform: scale(1.05);
+  transform: scale(1.1);
   background-image: url(/images/button-top-02.png);
   background-size: cover;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
@@ -2800,4 +2801,16 @@ main {
     transform: translateY(0);
     opacity: 1;
   }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Set the initial color for the scrollbar */
+::-webkit-scrollbar-thumb {
+  background-color: var(--scrollbar-color, #ffd47c);
+  border-radius: 10px;
+  transition: background-color 1s ease; /* Smooth color transition */
 }
